@@ -2,6 +2,11 @@ import gradio as gr
 import torch
 from model import run_inference
 
+import os
+
+os.environ["DGLBACKEND"] = "pytorch"
+os.environ["CUDA_VISIBLE_DEVICES"] = ""
+
 # --- model artifact paths (inside repo) ---
 CKPT_PATH = "gegnn_best.pt"
 STATS_PATH = "norm_stats.pt"
