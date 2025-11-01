@@ -1,0 +1,8 @@
+torch==2.4.1
+torchvision==0.19.1
+dgl-cu121==2.1.0
+pandas
+numpy
+scikit-learn
+gradio
+pyyaml
